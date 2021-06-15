@@ -1,7 +1,7 @@
 //const Moralis  = require('moralis/node');
 
-Moralis.initialize( "RAYKMFaU47diH6H71qMjp0f9kpEltlZb4l7DqG40" );
-Moralis.serverURL = 'https://vcx7krp5kvzp.moralis.io:2053/server';
+Moralis.initialize( "APPLICATION_ID" );
+Moralis.serverURL = 'SERVER_URL';
 
 const TOKEN_CONTRACT_ADDRESS = "0x5405F4154890c7e5FF5F918333444a4Da6D5E87d";
 const MARKETPLACE_CONTRACT_ADDRESS = "0xf30081C0a0C4e85a229659959D44905485ca3398";
