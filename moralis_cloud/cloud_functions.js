@@ -1,4 +1,4 @@
-Moralis.Cloud.define("getUserItems", async (request) => { 
+Moralis.Cloud.define("getUserItems", async (request) => {
 
     const query = new Moralis.Query("EthNFTOwners");
     query.equalTo("contract_type", "ERC721");
