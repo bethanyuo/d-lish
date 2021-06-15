@@ -53,7 +53,7 @@ contract ChefMarketContract {
         return newItemId;
     }
 
-    function buyItem(uint256 id) payable external 
+    function buyItem(uint256 id, address payable creator) payable external 
         ItemExists(id) IsForSale(id) HasTransferApproval(itemsForSale[id].tokenAddress, itemsForSale[id].tokenId) {
         require(msg.value >= itemsForSale[id].askingPrice, "Not enough funds sent");
         require(msg.sender != itemsForSale[id].seller);
@@ -61,8 +61,12 @@ contract ChefMarketContract {
         itemsForSale[id].isSold = true;
         activeItems[itemsForSale[id].tokenAddress][itemsForSale[id].tokenId] = false;
         IERC721(itemsForSale[id].tokenAddress).safeTransferFrom(itemsForSale[id].seller, msg.sender, itemsForSale[id].tokenId);
+        if (creator != itemsForSale[id].seller) {
+            itemsForSale[id].seller.transfer(msg.value * 17/(20));
+            creator.transfer(msg.value * 3/(20));
+        } else {
         itemsForSale[id].seller.transfer(msg.value);
-
+        }
         emit itemSold(id, msg.sender, itemsForSale[id].askingPrice);
     }
 }
