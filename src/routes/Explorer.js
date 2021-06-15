@@ -87,18 +87,18 @@ export default function Explore() {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Your Recipe
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      This is the best recipe you'll ever taste!
                     </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
-                      View
+                      Buy
                     </Button>
                     <Button size="small" color="primary">
-                      Edit
+                      Bid
                     </Button>
                   </CardActions>
                 </Card>

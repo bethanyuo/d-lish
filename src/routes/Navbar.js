@@ -24,7 +24,7 @@ export default function Navbar () {
                 <Toolbar>
                     <CameraIcon className={classes.icon} />
                     <Typography variant="h6" color="inherit" noWrap>
-                        Chef Stop
+                        D-Lish
             </Typography>
                 </Toolbar>
             </AppBar>

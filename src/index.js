@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Explore from './routes/Explore';
+import Explorer from './routes/Explorer';
 import Wallet from './routes/Wallet';
 import Create from './routes/Create';
 import Cookbook from './routes/Cookbook';
@@ -20,7 +20,7 @@ ReactDOM.render(
   <BrowserRouter>
   <Navbar />
     <Switch>
-      <Route exact path='/' render={props => <Explore {...props} />} />
+      <Route exact path='/' render={props => <Explorer {...props} />} />
       <Route exact path='/wallet' render={props => <Wallet {...props} />} />
       <Route exact path='/cookbook' render={props => <Cookbook {...props} />} />
       <Route exact path='/create' render={props => <Create {...props} />} />
