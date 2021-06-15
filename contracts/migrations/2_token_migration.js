@@ -1,5 +1,5 @@
-const ChefToken = artifacts.require("ChefToken");
+const D_LishToken = artifacts.require("D_LishToken");
 
 module.exports = function (deployer) {
-  deployer.deploy(ChefToken);
+  deployer.deploy(D_LishToken);
 };
