@@ -1,4 +1,4 @@
-![Explorer Page](images/explorer.jpg)
+![Explorer Page](images/explorer.png)
 
 # D-Lish
 
