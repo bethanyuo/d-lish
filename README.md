@@ -2,7 +2,7 @@
 
 # 👌 D-Lish
 
-Here is a dapp dedicated to recipe creators and food enthusiasts! Those who want to share their creations with the world. 
+Here is a dapp dedicated to recipe creators, professional chefs and food enthusiasts! Those who want to share their creations with the world. 
 
 🌟 And do you know the great thing about our dapp?! Once the non-fungible token (NFT) is resold, the original NFT creator is compensated with 15 percent of the earnings. We at PiñaPay (http://pinapay.io/) want to ensure that all of our creators receive residual income for their content.
 <br><br>
